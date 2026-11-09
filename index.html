@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sistem Informasi Kependudukan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside>
+        <div class="brand">
+            <p>Sistem Informasi Kependudukan</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Dashboard</a></li>
+            <li><a href="penduduk.html" class="nav-link">Data Penduduk</a></li>
+            <li><a href="kk.html" class="nav-link">Kartu Keluarga</a></li>
+            <li><a href="surat.html" class="nav-link">Layanan Surat</a></li>
+            <li><a href="mutasi.html" class="nav-link">Mutasi Warga</a></li>
+            <li><a href="laporan.html" class="nav-link">Laporan & Statistik</a></li>
+            <li><a href="pengaturan.html" class="nav-link">Pengaturan</a></li>
+        </ul>
+        <a href="#" class="btn design-by" id="design">Pencipta: Bocah Belakang</a>
+    </aside>
+
+    <main>
+        <header>
+            <div>
+                <h1>Dashboard Kependudukan</h1>
+                <p class="subtitle">Kelurahan Sukamaju - Kabupaten Bogor</p>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">AD</div>
+                <div>
+                    <strong>Admin Desa</strong>
+                    <div class="user-role"><a href="login.html" class="btn">Operator</a></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="kpi-grid">
+            <div class="card">
+                <div class="card-title">Total Penduduk</div>
+                <div class="card-value">12.450</div>
+                <div class="card-sub">↑ 2.4% dari bulan lalu</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Jumlah Kepala Keluarga</div>
+                <div class="card-value">3.210</div>
+                <div class="card-sub">3.180 KK Terverifikasi</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Kelahiran (Bulan Ini)</div>
+                <div class="card-value">18</div>
+                <div class="card-sub">L: 10 | P: 8</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Permohonan Surat</div>
+                <div class="card-value">42</div>
+                <div class="card-sub sub-warning">12 Membutuhkan Proses</div>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <div class="column-layout">
+                <div class="card">
+                    <h3>Demografi Kelompok Usia</h3>
+                    <div class="chart-box">
+                        <div class="bar-group">
+                            <div class="bar bar-30"></div>
+                            <span class="bar-label">0-14 th</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-85"></div>
+                            <span class="bar-label">15-64 th</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-40"></div>
+                            <span class="bar-label">65+ th</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Pengajuan Layanan Terbaru</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama Pemohon</th>
+                                <th>Jenis Layanan</th>
+                                <th>Tanggal</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Budi Santoso</td>
+                                <td>Pengajuan KTP-el</td>
+                                <td>24 Okt 2026</td>
+                                <td><span class="badge badge-pending">Diproses</span></td>
+                            </tr>
+                            <tr>
+                                <td>Siti Rahmawati</td>
+                                <td>Akta Kelahiran</td>
+                                <td>23 Okt 2026</td>
+                                <td><span class="badge badge-success">Selesai</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ahmad Rizky</td>
+                                <td>Surat Pindah Domisili</td>
+                                <td>22 Okt 2026</td>
+                                <td><span class="badge badge-success">Selesai</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column-layout">
+                <div class="card">
+                    <h3>Komposisi Gender</h3>
+                    <div class="gender-container">
+                        <div>
+                            <div class="gender-info">
+                                <span>Laki-Laki</span>
+                                <strong>6.300 (50.6%)</strong>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-male"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="gender-info">
+                                <span>Perempuan</span>
+                                <strong>6.150 (49.4%)</strong>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-female"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Aktivitas Mutasi Terakhir</h3>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <span><strong>Pencatatan Kelahiran</strong> atas nama Bayi Anisa</span>
+                            <span class="activity-time">2 jam yang lalu • oleh Admin</span>
+                        </li>
+                        <li class="activity-item">
+                            <span><strong>Perubahan KK</strong> (Tambah Anggota Keluarga)</span>
+                            <span class="activity-time">5 jam yang lalu • oleh Operator 1</span>
+                        </li>
+                        <li class="activity-item">
+                            <span><strong>Pencatatan Kematian</strong> di RT 03/RW 02</span>
+                            <span class="activity-time">1 hari yang lalu • oleh Admin</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="foto" class="design">
+        <div class="isi">
+            <span class="exit">&times;</span>
+            <div class="footer">
+                <h3>Bocah Kanan/Kiri Belakang</h3>
+                <img src="img/7serangkai.jpg" alt="" height="300" width="350">
+                <button id="close" class="btn">close</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/script.js"></script>
+</html>

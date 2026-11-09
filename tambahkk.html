@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Kartu Keluarga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">Sistem Informasi Kependudukan</div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Dashboard</a></li>
+            <li><a href="penduduk.html" class="nav-link active">Data Penduduk</a></li>
+            <li><a href="kk.html" class="nav-link">Kartu Keluarga</a></li>
+            <li><a href="surat.html" class="nav-link">Layanan Surat</a></li>
+            <li><a href="mutasi.html" class="nav-link">Mutasi Warga</a></li>
+            <li><a href="laporan.html" class="nav-link">Laporan & Statistik</a></li>
+            <li><a href="pengaturan.html" class="nav-link">Pengaturan</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div>
+                <h1 class="page-title">Tambah Kartu Keluarga</h1>
+                <p class="subtitle">Kelola Master Data Kartu Keluarga</p>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Tambah Kartu Keluarga</h3>
+                <a href="kk.html" class="btn">Kembali</a>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="nik">No. KK:</label>
+                    <input type="text" id="nik" name="nik" required>
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama Kepala Keluarga:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah_anggota">Jumlah Anggota Keluarga:</label>
+                    <input type="number" id="jumlah_anggota" name="jumlah_anggota" required>
+                </div>
+                <input type="submit" value="Simpan" class="btn">
+                <input type="reset" value="Batal" class="btn">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
